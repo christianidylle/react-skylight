@@ -2,9 +2,10 @@
   "name": "react-skylight",
   "version": "0.2.0",
   "description": "A react component for modals and dialogs.",
-  "main": "index.js",
+  "main": "dist-modules/skylight.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "babel ./src --out-dir ./dist-modules"
   },
   "repository": {
     "type": "git",
@@ -47,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "babel": "^5.8.23",
     "jest-cli": "^0.2.1"
   }
 }
