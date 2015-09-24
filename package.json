@@ -5,7 +5,7 @@
   "main": "dist-modules/skylight.js",
   "scripts": {
     "test": "jest",
-    "prepublish": "sudo chown -R `whoami` ../../node_modules && babel ./src --out-dir ./dist-modules"
+    "postinstall": "sudo chown -R `whoami` ../../node_modules && babel ./src --out-dir ./dist-modules"
   },
   "repository": {
     "type": "git",
