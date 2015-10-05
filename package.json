@@ -4,8 +4,7 @@
   "description": "A react component for modals and dialogs.",
   "main": "dist-modules/skylight.js",
   "scripts": {
-    "test": "jest",
-    "postinstall": "babel ./src --out-dir ./dist-modules"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -25,20 +24,10 @@
   ],
   "author": "Marcio Gasparotto",
   "license": "MIT",
-  "peerDependencies": {
-    "react": ">=0.12.0 <1.0.0"
-  },
-  "dependencies": {
-    "react": "*",
-    "react-tools": "*"
-  },
   "jest": {
     "scriptPreprocessor": "preprocessor.js",
     "unmockedModulePathPatterns": [
       "node_modules/react"
     ]
-  },
-  "devDependencies": {
-    "babel": "^5.8.23"
   }
 }
